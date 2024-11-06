@@ -1,0 +1,12 @@
+﻿services:
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: WebAPi/Dockerfile
+
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: API/Dockerfile
